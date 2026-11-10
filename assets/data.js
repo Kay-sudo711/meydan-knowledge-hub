@@ -211,25 +211,76 @@ const KB_DATA = [
         ],
         "notes": "The type of amendment and required evidence depend on the field being changed. Confirm with the responsible immigration team."
       },
-      {
-        "slug": "employee-investor-visas",
-        "title": "Employee and investor visas",
-        "summary": "Explain the differences between employee and investor residence routes.",
-        "purpose": "Help employees identify the correct route based on the person's relationship with the company.",
-        "steps": [
-          "Confirm whether the applicant is an employee or an eligible owner/partner.",
-          "Check the relevant company and applicant eligibility requirements.",
-          "Use the correct application category and supporting documents.",
-          "Explain medical, Emirates ID and insurance requirements.",
-          "Track the application to completion."
-        ],
-        "documents": [
-          "Employee: employment contract and job-related documents, where required",
-          "Investor: shareholder or ownership evidence, where required",
-          "Passport, photograph and other immigration documents"
-        ],
-        "notes": "Do not quote fixed absence limits, age limits or fees without checking current official rules for the visa category."
-      },
+      
+
+{
+  "slug": "employee-visas",
+  "title": "Employee Visa Guidelines",
+  "summary": "Explain the requirements, eligibility, costs and application process for obtaining an employee residence visa through Meydan Free Zone.",
+  "purpose": "Guide employees and company representatives through the employee visa application process, whether the applicant is inside or outside the UAE.",
+  "steps": [
+    "Confirm that the company has an active Meydan Free Zone trade licence and valid establishment or immigration card.",
+    "Check the company's available visa allocation and eligibility to apply for an employee visa.",
+    "Confirm that the applicant is being sponsored as an employee and identify the correct job designation.",
+    "Check the applicant's age and passport validity. Passport validity must be more than six months.",
+    "Collect the passport copy, passport-size photograph and attested educational certificate, where applicable.",
+    "Prepare and complete the required employment contract.",
+    "Select the correct application type: Outside Application for an applicant outside the UAE, or Inside Application for an applicant already inside the UAE.",
+    "Submit the employee visa application with the required supporting documents.",
+    "After entry permit approval, arrange the applicant's entry into the UAE if applying from outside the country.",
+    "For applicants already inside the UAE, complete the Change of Status process and pay the applicable fee.",
+    "Arrange the medical fitness test at an approved UAE medical centre.",
+    "Complete the Emirates ID application and biometric requirements, where applicable.",
+    "Ensure the required health insurance is arranged.",
+    "Complete the residence visa issuance process and monitor the application until approval.",
+    "Share the completed visa and relevant documents with the employee and update the company records."
+  ],
+  "documents": [
+    "Passport copy with more than six months validity",
+    "Recent passport-size photograph",
+    "Attested educational degree, if required for the job designation",
+    "Signed employment contract",
+    "Existing UAE visa or entry permit details, if applicable",
+    "Additional documents or approvals requested by Meydan Free Zone or the immigration authority"
+  ],
+  "notes": "DOCUMENT REQUIREMENTS: An attested degree is required for Manager-level designations and above, according to the supplied Meydan internal guideline. Exception supplied: if the applicant is the Manager named on the trade licence and applies under the designation GENERAL MANAGER, an attested degree is not required. Confirm this exception with the current Meydan processing team before applying. Other professions may require additional qualifications or third-party approvals.\n\nELIGIBILITY: Minimum age: 18 years. Maximum age: 63 years, according to the supplied Meydan guideline. The maximum age must be confirmed against current Meydan and immigration rules before publication. Applicants aged 18 and above are subject to medical fitness requirements.\n\nAPPLICATION TYPE: Outside Application: for applicants currently outside the UAE. Inside Application: for applicants currently inside the UAE. The applicable Change of Status fee is charged for an inside application. The applicant must not work until the required legal work authorisation and visa status are in place.\n\nCOST BREAKDOWN — SUPPLIED MEYDAN REFERENCE: Employee Visa: AED 3,500. Change of Status: AED 1,500, applicable to inside applications. Medicals and Emirates ID: AED 2,250. Outside application reference total: AED 5,750. Inside application reference total: AED 7,250. These are reference amounts supplied for this SOP and must be confirmed with the current Meydan fee schedule before quoting clients. Check whether insurance, additional services, VAT or other charges are excluded.\n\nIMPORTANT: Visa approval, validity, processing time, age limits, fees and document requirements are subject to current Meydan Free Zone and immigration authority rules. Do not guarantee approval or quote outdated fees."
+},
+      
+{
+  "slug": "investor-visas",
+  "title": "Investor / Partner Visa Guidelines",
+  "summary": "Explain the eligibility, documents, fees and application process for investor and partner residence visas through Meydan Free Zone.",
+  "purpose": "Guide company shareholders, owners and partners through the process of obtaining an investor or partner residence visa.",
+  "steps": [
+    "Confirm whether the applicant is the sole shareholder or one of multiple shareholders in the Meydan Free Zone company.",
+    "Determine the correct visa category: Investor Visa for an eligible sole shareholder or Partner Visa for an eligible shareholder in a company with multiple shareholders.",
+    "Verify the applicant's shareholding, share capital and eligibility with Meydan Free Zone.",
+    "Check that the company has an active trade licence and the required establishment or immigration registration.",
+    "Collect the applicant's passport, photograph and six-month bank statement.",
+    "Collect company ownership evidence, such as the share certificate, shareholder register or Memorandum of Association, where required.",
+    "Confirm whether the bank statement must be personal or corporate and whether any minimum balance or transaction requirements apply.",
+    "Select the correct application type: Outside Application for an applicant outside the UAE, or Inside Application for an applicant already inside the UAE.",
+    "Submit the investor or partner visa application with the required supporting documents.",
+    "For applicants outside the UAE, arrange entry into the UAE after the entry permit is approved.",
+    "For applicants inside the UAE, complete the Change of Status process and pay the applicable fee.",
+    "Arrange the medical fitness test at an approved UAE medical centre.",
+    "Complete the Emirates ID application and biometric requirements, where applicable.",
+    "Ensure the required health insurance is arranged.",
+    "Complete the residence visa issuance process and track the application until approval.",
+    "Share the completed residence visa and relevant documents with the applicant and update company records."
+  ],
+  "documents": [
+    "Passport copy with more than six months validity",
+    "Recent passport-size photograph",
+    "Personal or corporate bank statement for the last six months, as requested by Meydan",
+    "Share certificate or other proof of shareholding",
+    "Memorandum of Association or company ownership documents, where required",
+    "Valid company trade licence",
+    "Existing UAE visa or entry permit details, if applicable",
+    "Additional documents requested by Meydan Free Zone or the immigration authority"
+  ],
+  "notes": "ELIGIBILITY: Minimum age: 18 years. No maximum age limit is stated in the supplied Meydan guideline. Applicants must still satisfy applicable immigration, medical fitness and company eligibility requirements.\n\nVISA CATEGORY: An eligible sole shareholder generally applies for an Investor Visa. An eligible shareholder in a company with multiple shareholders generally applies for a Partner Visa. Confirm the current shareholding and share capital eligibility requirements with Meydan. Meydan's published FAQ refers to AED 50,000 or more in share capital as an eligibility threshold; verify the current rule before processing.\n\nBANK STATEMENT: The supplied Meydan guideline requests a corporate or personal bank statement covering the last six months. Confirm which statement is required for the applicant's specific case, whether it must be from a UAE bank, and whether a minimum balance or transaction history is required. Do not assume that either statement type is interchangeable.\n\nAPPLICATION TYPE: Outside Application: for applicants currently outside the UAE. Inside Application: for applicants currently inside the UAE. The Change of Status fee applies to inside applications.\n\nCOST BREAKDOWN — SUPPLIED MEYDAN REFERENCE: Investor / Partner Visa Application: AED 4,000. Change of Status: AED 1,500, applicable to inside applications. Medicals and Emirates ID: AED 2,250. Outside application reference total: AED 6,250. Inside application reference total: AED 7,750. These figures must be checked against the current Meydan fee schedule. They exclude any additional charges not listed here, such as insurance, visa allocation, establishment card or other applicable services.\n\nVALIDITY: Meydan's published 2024 fee document referred to a two-year investor/partner visa. Confirm the validity on the current application and issued residence permit rather than assuming it is unchanged.\n\nIMPORTANT: Visa issuance is subject to Meydan Free Zone checks and final approval by the relevant immigration authority. Do not guarantee approval or quote outdated fees."
+},
       {
         "slug": "dependent-visas",
         "title": "Dependent visas",
