@@ -211,9 +211,7 @@ const KB_DATA = [
         ],
         "notes": "The type of amendment and required evidence depend on the field being changed. Confirm with the responsible immigration team."
       },
-      
-
-{
+      {
   "slug": "employee-visas",
   "title": "Employee Visa Guidelines",
   "summary": "Explain the requirements, eligibility, costs and application process for obtaining an employee residence visa through Meydan Free Zone.",
@@ -245,7 +243,6 @@ const KB_DATA = [
   ],
   "notes": "DOCUMENT REQUIREMENTS: An attested degree is required for Manager-level designations and above, according to the supplied Meydan internal guideline. Exception supplied: if the applicant is the Manager named on the trade licence and applies under the designation GENERAL MANAGER, an attested degree is not required. Confirm this exception with the current Meydan processing team before applying. Other professions may require additional qualifications or third-party approvals.\n\nELIGIBILITY: Minimum age: 18 years. Maximum age: 63 years, according to the supplied Meydan guideline. The maximum age must be confirmed against current Meydan and immigration rules before publication. Applicants aged 18 and above are subject to medical fitness requirements.\n\nAPPLICATION TYPE: Outside Application: for applicants currently outside the UAE. Inside Application: for applicants currently inside the UAE. The applicable Change of Status fee is charged for an inside application. The applicant must not work until the required legal work authorisation and visa status are in place.\n\nCOST BREAKDOWN — SUPPLIED MEYDAN REFERENCE: Employee Visa: AED 3,500. Change of Status: AED 1,500, applicable to inside applications. Medicals and Emirates ID: AED 2,250. Outside application reference total: AED 5,750. Inside application reference total: AED 7,250. These are reference amounts supplied for this SOP and must be confirmed with the current Meydan fee schedule before quoting clients. Check whether insurance, additional services, VAT or other charges are excluded.\n\nIMPORTANT: Visa approval, validity, processing time, age limits, fees and document requirements are subject to current Meydan Free Zone and immigration authority rules. Do not guarantee approval or quote outdated fees."
 },
-      
 {
   "slug": "investor-visas",
   "title": "Investor / Partner Visa Guidelines",
