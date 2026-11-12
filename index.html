@@ -1,4 +1,80 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Meydan FZ Employee Knowledge Hub</title><link rel="stylesheet" href="assets/style.css"><script src="assets/data.js"></script><script src="assets/app.js"></script></head><body><div id="app"></div><script>
-document.getElementById('app').innerHTML=header()+`<main class="wrap"><section class="hero"><div class="eyebrow">Employee reference centre</div><h1>Meydan FZ Knowledge Hub</h1><p>Find approved procedures, document checklists, process steps and operational guidance in one place.</p>${searchMarkup()}</section><div class="section-head" id="topics"><div><h2>Knowledge categories</h2><div class="muted">Choose a topic to browse its SOPs and guidance.</div></div><span class="pill">7 main topics</span></div><section class="grid">${KB_DATA.map(c=>`<a class="card" href="${catUrl(c)}"><div class="num">${c.number} / KNOWLEDGE AREA</div><h3>${esc(c.title)}</h3><p>${esc(c.intro)}</p><p style="margin-top:12px;color:var(--teal);font-weight:700">${c.topics.length} subtopics →</p></a>`).join('')}</section><div class="panel" style="margin-top:22px"><h2>How to use this knowledge base</h2><ol><li>Choose a category or search for a keyword.</li><li>Open the relevant subtopic SOP.</li><li>Check the required documents, steps, process diagram and important notes.</li><li>Confirm approval status and last-reviewed date before relying on the information.</li></ol><div class="callout">Important: This is a starter knowledge-base framework. SOPs are marked Draft until reviewed and approved by the relevant process owner. Fees, timelines, authority requirements and internal contacts must be verified before use.</div></div></main>`+footer();
-document.getElementById('globalSearch').addEventListener('keydown',e=>{if(e.key==='Enter')runSearch()});
-</script></body></html>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Employee reference hub for Meydan Free Zone work processes, SOPs, checklists and operational guidance.">
+  <title>Meydan FZ | Employee Knowledge Hub</title>
+  <link rel="stylesheet" href="assets/style.css">
+  <script src="assets/data.js"></script>
+  <script src="assets/app.js"></script>
+</head>
+<body>
+  <div id="app"></div>
+  <script>
+    const totalSops = KB_DATA.reduce((sum, category) => sum + category.topics.length, 0);
+    const featured = ["email-kyc", "visa-services", "company-setup"];
+    const featuredCategories = featured.map(slug => KB_DATA.find(c => c.slug === slug)).filter(Boolean);
+    document.getElementById("app").innerHTML = header() + `
+      <main class="wrap">
+        <section class="hero">
+          <div class="eyebrow">Employee reference centre</div>
+          <h1>Meydan FZ Knowledge Hub</h1>
+          <p>One place to find work procedures, SOPs, document checklists, process steps and operational guidance. Search across all topics or browse by department workflow.</p>
+          ${searchMarkup()}
+          <div class="notice" style="color:#e2edf4"> ${KB_DATA.length} knowledge areas &nbsp;·&nbsp; ${totalSops} SOP topics &nbsp;·&nbsp; Employee reference</div>
+        </section>
+
+        <section class="section-head" id="topics">
+          <div><h2>Browse knowledge areas</h2><div class="muted">Choose a category to view its subtopics and individual SOP pages.</div></div>
+          <span class="pill">${KB_DATA.length} main topics</span>
+        </section>
+        <section class="grid">
+          ${KB_DATA.map(c => `
+            <a class="card" href="${catUrl(c)}">
+              <div class="num">${c.number} / KNOWLEDGE AREA</div>
+              <h3>${esc(c.title)}</h3>
+              <p>${esc(c.intro)}</p>
+              <p style="margin-top:14px;color:var(--teal);font-weight:700">${c.topics.length} subtopics <span aria-hidden="true">→</span></p>
+            </a>`).join("")}
+        </section>
+
+        <section class="section-head">
+          <div><h2>Quick access</h2><div class="muted">Frequently used employee workflows.</div></div>
+        </section>
+        <section class="topiclist">
+          ${featuredCategories.map(c => `
+            <a class="topic" href="${catUrl(c)}">
+              <div class="num">QUICK ACCESS</div>
+              <h3>${esc(c.title)} →</h3>
+              <p>${esc(c.intro)}</p>
+            </a>`).join("")}
+        </section>
+
+        <section class="panel" style="margin-top:22px">
+          <h2>How to use this hub</h2>
+          <ol>
+            <li>Search using a service name, document, fee, process step or keyword — or select a knowledge area above.</li>
+            <li>Open the relevant subtopic to view its purpose, document checklist and step-by-step procedure.</li>
+            <li>Review the process diagram, fees, timelines, notes and escalation guidance.</li>
+            <li>Check the approval status and review information before relying on an SOP.</li>
+          </ol>
+          <div class="callout"><strong>Important:</strong> Starter content is marked Draft — Pending Approval. Verify fees, timelines, authority requirements, internal system steps and contact details with the current authorised source or process owner before advising a client. Do not upload passports, client KYC records, credentials or other confidential information.</div>
+        </section>
+      </main>` + footer();
+
+    const searchInput = document.getElementById("globalSearch");
+    if (searchInput) {
+      searchInput.addEventListener("keydown", event => {
+        if (event.key === "Enter") runSearch();
+      });
+      searchInput.addEventListener("input", () => {
+        if (!searchInput.value.trim()) {
+          const results = document.getElementById("globalSearchResults");
+          if (results) results.style.display = "none";
+        }
+      });
+    }
+  </script>
+</body>
+</html>
